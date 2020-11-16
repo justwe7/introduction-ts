@@ -1,5 +1,5 @@
 new Promise((resolve: any) => {
   setTimeout(() => {
-    resolve(777)
+    resolve(7)
   }, 1000)
 })
