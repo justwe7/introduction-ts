@@ -1,3 +1,5 @@
+跟着 https://jkchao.github.io/typescript-book-chinese/typings/types.html 学习typescript
+
 ### 编译选项
 在项目的根目录下创建一个空 JSON 文件。TypeScript 将 会把此目录和子目录下的所有 .ts 文件作为编译上下文的一部分，它还会包含一部分默认的编译选项
 
@@ -51,3 +53,58 @@ ES 模块：它并没有准备好。
 可以通过 declare module 'somePath' 声明一个全局模块的方式，来解决查找模块路径的问题。
 
 **当你从 JS 迁移到 TS 时，定义 declare module "some-library-you-dont-care-to-get-defs-for" 能让你快速开始。**
+
+
+## 类型系统
+> 类型注解使用 :TypeAnnotation 语法。在类型声明空间中可用的任何内容都可以用作类型注解。
+
+```ts
+const num: number = 123; // 定义 number 类型变量
+function identity(num: number): number { // 接受 number / 返回 number
+  return num;
+}
+```
+
+- 原始类型 `const num: number = 1;`
+- 数组 `使用后缀 []， 接着你可以根据需要补充任何有效的类型注解（如：:boolean[]）`
+- **接口** `interface Foo {}`
+  > 接口是 TypeScript 的一个核心知识，它能合并众多类型声明至一个类型声明
+  > 
+  > 把类型注解：first: string + second: string 合并到了一个新的类型注解里 Name，这样能强制对每个成员进行类型检查
+- 特殊类型
+  - any  一个类型系统的「后门」,TypeScript 将会把类型检查关闭。在类型系统里 any 能够兼容所有的类型（包括它自己）
+  - null、 undefined 其他被标注了 any 类型的变量一样，都能被赋值给任意类型的变量
+  - void 表示一个函数没有一个返回值
+- 泛型  例如：在一个函数中，它接受一个列表，并且返回这个列表的反向排序
+  > 事实上，JavaScript 数组已经拥有了 reverse 的方法，TypeScript 也确实使用了泛型来定义其结构
+  > ```
+  > interface Array<T> {
+  >   reverse(): T[];
+  > }
+  > ```
+- 联合类型 使用 | 作为标记，如 string | number
+- 交叉类型 `<T & U>` 从两个对象中创建一个新对象，新对象拥有着两个对象所有的功能。
+- 元组类型 `:[typeofmember1, typeofmember2]` js只能使用数组来表示元组。元租强制数组的内容
+- 类型别名 type SomeName = someValidTypeAnnotation 来创建别名
+
+
+> 如果你需要使用类型注解的层次结构，请使用接口。它能使用 implements 和 extends
+> 为一个简单的对象类型（如上面例子中的 Coordinates）使用类型别名，只需要给它一个语义化的名字即可。另外，当你想给联合类型和交叉类型提供一个语义化的名称时，一个类型别名将会是一个好的选择。
+
+## 从 JavaScript 迁移
+- 添加一个 tsconfig.json 文件；
+- 把文件扩展名从 .js 改成 .ts，开始使用 any 来减少错误；
+- 开始在 TypeScript 中写代码，尽可能的减少 any 的使用；
+- 回到旧代码，开始添加类型注解，并修复已识别的错误；
+- 为第三方 JavaScript 代码定义环境声明。`declare module 'jquery';`
+
+## @types
+默认情况下，TypeScript 会自动包含支持全局使用的任何声明定义。例如，对于 jquery，你应该能够在项目中开始全局使用 $。
+
+## 环境声明
+TypeScript 的设计目标之一是让你在 TypeScript 中安全、轻松地使用现有的 JavaScript 库，TypeScript 通过声明文件来做到这一点
+在项目 `xxx.d.ts`
+
+如果是模块化的话那就放到和源码(A.js)文件同一个目录下,如果是全局变量的话理论上放到哪里都可以 当然除非你在tsconfig.json 文件里面特殊配置过
+
+https://segmentfault.com/a/1190000009247663

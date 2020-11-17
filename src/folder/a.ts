@@ -3,3 +3,5 @@ new Promise((resolve: any) => {
     resolve(7)
   }, 1000)
 })
+
+globalVal = 1111
