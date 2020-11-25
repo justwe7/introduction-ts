@@ -29,4 +29,4 @@ name = {
     first: 'John',
     second: 'Doe'
 };
-//# sourceMappingURL=接口.js.map
+//# sourceMappingURL=%E6%8E%A5%E5%8F%A3.js.map

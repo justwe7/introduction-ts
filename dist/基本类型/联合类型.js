@@ -8,4 +8,4 @@ function formatCommandline(command) {
     }
     // Do stuff with line: string
 }
-//# sourceMappingURL=联合类型.js.map
+//# sourceMappingURL=%E8%81%94%E5%90%88%E7%B1%BB%E5%9E%8B.js.map
