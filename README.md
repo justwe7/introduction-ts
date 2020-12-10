@@ -108,3 +108,33 @@ TypeScript 的设计目标之一是让你在 TypeScript 中安全、轻松地使
 如果是模块化的话那就放到和源码(A.js)文件同一个目录下,如果是全局变量的话理论上放到哪里都可以 当然除非你在tsconfig.json 文件里面特殊配置过
 
 https://segmentfault.com/a/1190000009247663
+
+## 接口
+接口运行时的影响为 0。在 TypeScript 接口中有很多方式来声明变量的结构。
+
+类可以继承接口的规则
+```
+interface Point {
+  x: number;
+  y: number;
+  z: number; // New member
+}
+
+class MyPoint implements Point {
+  // ERROR : missing member `z`
+  x: number;
+  y: number;
+}
+```
+
+## 枚举类型
+枚举是组织收集有关联变量的一种方式
+```js
+enum CardSuit {
+  Clubs,
+  Diamonds,
+  Hearts,
+  Spades
+}
+// {0: "Clubs", 1: "Diamonds", 2: "Hearts", 3: "Spades", Clubs: 0, Diamonds: 1, Hearts: 2, Spades: 3}
+```
