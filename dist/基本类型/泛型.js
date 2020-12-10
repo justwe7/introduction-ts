@@ -13,4 +13,4 @@ console.log(reversed); // 3, 2, 1
 // reversed = ['1', '2']; // Error
 reversed[0] = 1; // ok
 reversed = [1, 2]; // ok
-//# sourceMappingURL=泛型.js.map
+//# sourceMappingURL=%E6%B3%9B%E5%9E%8B.js.map

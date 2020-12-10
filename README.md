@@ -138,3 +138,14 @@ enum CardSuit {
 }
 // {0: "Clubs", 1: "Diamonds", 2: "Hearts", 3: "Spades", Clubs: 0, Diamonds: 1, Hearts: 2, Spades: 3}
 ```
+
+## lib.d.ts
+
+这个文件包含 JavaScript 运行时以及 DOM 中存在各种常见的环境声明。
+
+- 它自动包含在 TypeScript 项目的编译上下文中；
+- 它能让你快速开始书写经过类型检查的 JavaScript 代码。
+
+可以通过指定 --noLib 的编译器命令行标志（或者在 tsconfig.json 中指定选项 noLib: true）从上下文中排除此文件
+
+> noLib true 配置项和 lib 不能共存

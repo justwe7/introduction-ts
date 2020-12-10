@@ -17,6 +17,7 @@
       "esnext",
       "es2015.promise"
     ],
+    // "noLib": true,
     "allowJs": true,                       // 允许编译 javascript 文件
     "checkJs": true,                       // 报告 javascript 文件中的错误
     // "jsx": "preserve",                     // 指定 jsx 代码的生成: 'preserve', 'react-native', or 'react'

@@ -7,4 +7,4 @@ sample = '123';
 // 会检查类型
 // sample = true; // Error
 exports.default = {};
-//# sourceMappingURL=类型别名.js.map
+//# sourceMappingURL=%E7%B1%BB%E5%9E%8B%E5%88%AB%E5%90%8D.js.map

@@ -9,4 +9,4 @@ function log(message) {
     console.log(message);
 }
 exports.default = {};
-//# sourceMappingURL=特殊类型.js.map
+//# sourceMappingURL=%E7%89%B9%E6%AE%8A%E7%B1%BB%E5%9E%8B.js.map
