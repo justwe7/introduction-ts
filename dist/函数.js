@@ -4,4 +4,4 @@ sampleVariable = {
 };
 function fooo(sampleParameter) { }
 fooo({ bar: 2 });
-//# sourceMappingURL=%E5%87%BD%E6%95%B0.js.map
+//# sourceMappingURL=函数.js.map

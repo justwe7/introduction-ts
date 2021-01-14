@@ -9,4 +9,4 @@ str = '123';
 bool = true;
 bool = false;
 // bool = 'false'; // Error
-//# sourceMappingURL=%E5%8E%9F%E5%A7%8B%E7%B1%BB%E5%9E%8B.js.map
+//# sourceMappingURL=原始类型.js.map

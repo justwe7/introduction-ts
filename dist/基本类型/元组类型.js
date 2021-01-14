@@ -1,1 +1,6 @@
-//# sourceMappingURL=%E5%85%83%E7%BB%84%E7%B1%BB%E5%9E%8B.js.map
+var nameNumber;
+// Ok
+nameNumber = ['Jenny', 221345];
+// Error
+// nameNumber = ['Jenny', '221345'];
+//# sourceMappingURL=元组类型.js.map

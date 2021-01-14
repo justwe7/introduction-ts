@@ -7,4 +7,4 @@ boolArray = [false, false];
 // boolArray[0] = 'false'; // Error
 // boolArray = 'false'; // Error
 // boolArray = [true, 'false']; // Error
-//# sourceMappingURL=%E6%95%B0%E7%BB%84.js.map
+//# sourceMappingURL=数组.js.map

@@ -33,4 +33,5 @@ printAnimalAbilities(animal); // animal has claws, animal can fly
 
 
 const o = { a: 1 }
-const { a: (ooo as number) = 12 } = o
+// const { a: (ooo as number) = 12 } = o
+// const { a: ooo } = o

@@ -11,4 +11,4 @@ var bas;
 // 变量声明空间包含可用作变量的内容，在上文中 Class Foo 提供了一个类型 Foo 到类型声明空间，此外它同样提供了一个变量 Foo 到变量声明空间，如下所示
 var someVar = Foo;
 var someOtherVar = 123;
-//# sourceMappingURL=%E5%A3%B0%E6%98%8E%E7%A9%BA%E9%97%B4.js.map
+//# sourceMappingURL=声明空间.js.map

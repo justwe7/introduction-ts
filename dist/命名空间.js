@@ -12,4 +12,4 @@ var Utility;
 // usage
 Utility.log('Call me');
 Utility.error('maybe');
-//# sourceMappingURL=%E5%91%BD%E5%90%8D%E7%A9%BA%E9%97%B4.js.map
+//# sourceMappingURL=命名空间.js.map
